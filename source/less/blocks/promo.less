@@ -1,16 +1,37 @@
 .promo {
   margin-bottom: 20px;
   padding-top: 27px;
-  background-image: url("../../img/header/index-background-desktop2.jpg");
-  background-repeat: no-repeat;
-  color: #ffffff;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-top: 44px;
+    padding-left: 87px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 82px;
+    padding-top: 93px;
+    padding-left: 80px;
+  }
+
 }
 
 .promo__title {
+  font-weight: 400;
   margin: 0;
   margin-bottom: 25px;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 520px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+  }
+
 }
 
 .promo__discription {
@@ -18,8 +39,16 @@
   margin-bottom: 29px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 49px;
+  }
+
 }
 
 .promo__image {
-  margin-bottom: 3px;
+  display: block;
+  margin: 0 auto 3px;
 }
